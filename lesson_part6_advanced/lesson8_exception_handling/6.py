@@ -9,4 +9,10 @@
 # Инициализация списка для хранения оценок
 grades = []
 
-print('Hello')
+while True:
+    mark = input('Введите оценку: (стоп-завершить)')
+    if mark == 'стоп':
+        break
+    grades.append(mark)
+
+print('Список оценок:', grades)
