@@ -13,7 +13,7 @@ while True:
         count = sweets_amount / children_amount
         print(f"Каждый ребенок получит {count} конфет.")
         break
-    except ZeroDivisionError:
+    except (ZeroDivisionError, TypeError):
         print('Ошибка! Детей не может быть ноль.')
 #допиши вычисление порции с обработкой деления на 0
 
